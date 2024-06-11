@@ -1,20 +1,24 @@
 [package]
 name = "better-timer"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
+version = "3.0.171"
+description = "BGsystem3 考试倒计时"
+authors = [ "you" ]
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[build-dependencies]
-tauri-build = { version = "1", features = [] }
+[build-dependencies.tauri-build]
+version = "1"
+features = [ ]
 
 [dependencies]
-tauri = { version = "1", features = [ "shell-open", "window-all"] }
-serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 
+  [dependencies.tauri]
+  version = "1"
+  features = [ "shell-open", "window-all" ]
+
+  [dependencies.serde]
+  version = "1"
+  features = [ "derive" ]
+
 [features]
-# This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
-custom-protocol = ["tauri/custom-protocol"]
+custom-protocol = [ "tauri/custom-protocol" ]
