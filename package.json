@@ -1,7 +1,7 @@
 {
   "name": "better-timer",
   "private": true,
-  "version": "3.0.171-alpha",
+  "version": "3.1.0-alpha",
   "type": "module",
   "scripts": {
     "dev": "vite",
